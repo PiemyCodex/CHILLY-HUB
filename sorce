@@ -50,6 +50,7 @@ local Library = {
     Items = {},
     Drawings = {},
     Ignores = {},
+    Keybind = {},
     Watermark = {},
     Connections = {},
     Keys = {
@@ -655,14 +656,14 @@ do
                 Data = Library.Theme.Gradient
             }, Library.Keybind)
             --
-            local WindowText = Utility.AddDrawing("Text", {
+            local WindowText = Utility.AddDrawing("", {
                 Font = Library.Theme.Font,
                 Size = Library.Theme.TextSize,
                 Color = Library.Theme.Text,
-                Text = "Keybinds",
+                Text = "",
                 Position = Vector2.new(WindowOutlineBorder.Position.X + (WindowOutlineBorder.Size.X / 2), WindowOutlineBorder.Position.Y + 2),
-                Visible = true,
-                Center = true,
+                Visible = false,
+                Center = false,
                 Outline = false
             }, Library.Keybind)
             --
