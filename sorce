@@ -4273,6 +4273,6 @@ Maid.DisconnectAll = function()
     for Idx, Val in pairs(Maid.Connections) do
         Val:Disconnect()
     end
-local W_S = game.Player.LocalPlayer.Character.Humanoid.WalkSpeed
+local W_S = game.Player.LocalPlayer.Character.Humanoid.WalkSpeed =(1, 2, 3, 4, 5, 6, 7, 8, 9, 10,)
 
 end
