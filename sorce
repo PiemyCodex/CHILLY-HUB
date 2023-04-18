@@ -667,16 +667,6 @@ do
                 Outline = false
             }, Library.Keybind)
             --
-            local CurrentBinds = Utility.AddDrawing("Text", {
-                Font = Library.Theme.Font,
-                Size = Library.Theme.TextSize,
-                Color = Library.Theme.Text,
-                Text = "",
-                Position = Vector2.new(WindowOutlineBorder.Position.X + 3, WindowOutlineBorder.Position.Y + 8),
-                Visible = true,
-                Center = false,
-                Outline = false
-            }, Library.Keybind)
             --
             Utility.AddConnection(RunService.RenderStepped, function(Type, Color)
                 CurrentBinds.Text = Window.BindList
