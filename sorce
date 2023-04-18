@@ -1,3 +1,7 @@
+-- // Lib \\ --
+--[[
+    local UI = loadstring(game:HttpGet("https://abyss.best/assets/files/gayasf.ui2?key=5y1lxXSfWKhlQkSqhUuFyB8kPp8hsCau"))()
+]]
 -- // Library Init \\ --
 local Start = tick()
 local LoadTime = tick()
@@ -576,7 +580,7 @@ do
         --
         for Index, Value in pairs(Library.Keybind) do
             if Value[1] then
-                Value[1]:Remove(1)
+                Value[1]:Remove()
             end
         end
         --
@@ -656,14 +660,14 @@ do
                 Data = Library.Theme.Gradient
             }, Library.Keybind)
             --
-            local WindowText = Utility.AddDrawing("", {
+            local WindowText = Utility.AddDrawing("Text", {
                 Font = Library.Theme.Font,
                 Size = Library.Theme.TextSize,
                 Color = Library.Theme.Text,
-                Text = "",
+                Text = "Keybinds",
                 Position = Vector2.new(WindowOutlineBorder.Position.X + (WindowOutlineBorder.Size.X / 2), WindowOutlineBorder.Position.Y + 2),
-                Visible = false,
-                Center = false,
+                Visible = true,
+                Center = true,
                 Outline = false
             }, Library.Keybind)
             --
@@ -671,10 +675,10 @@ do
                 Font = Library.Theme.Font,
                 Size = Library.Theme.TextSize,
                 Color = Library.Theme.Text,
-                Text = "Keybind",
+                Text = "",
                 Position = Vector2.new(WindowOutlineBorder.Position.X + 3, WindowOutlineBorder.Position.Y + 8),
                 Visible = true,
-                Center = true,
+                Center = false,
                 Outline = false
             }, Library.Keybind)
             --
