@@ -50,7 +50,7 @@ local Library = {
     Items = {},
     Drawings = {},
     Ignores = {},
-    Keybind = {},
+    Keybind = {false},
     Watermark = {},
     Connections = {},
     Keys = {
@@ -576,7 +576,7 @@ do
         --
         for Index, Value in pairs(Library.Keybind) do
             if Value[1] then
-                Value[1]:Remove()
+                Value[1]:Remove(1)
             end
         end
         --
