@@ -6,6 +6,10 @@ local Secure = setmetatable({}, {
         return game:GetService(Val)
     end
 })
+----------
+local Noclip = nil
+local Clip = nil
+----------
 --
 local UserInput = Secure.UserInputService
 local RunService = Secure.RunService
